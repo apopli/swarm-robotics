@@ -25,7 +25,9 @@ Firstly, the establishment of connection between the bots with the help of a ser
 
 Now the second part of the code is to take the bots to the assigned position.
 
-	* It does this by applying PID Control on the PWM signal of the motors of the robot. The parameter to be controlled is the angle between the axis of robot and the line connecting the centroid of robot and the final position. Thus the required position is finally reached.
+	* It does this by applying PID Control on the PWM signal of the motors of the robot. The parameter 
+	to be controlled is the angle between the axis of robot and the line connecting the centroid 
+	of robot and the final position. Thus the required position is finally reached.
 
 
 The code is self-explanatory and important comments have been added at appropriate positions.
