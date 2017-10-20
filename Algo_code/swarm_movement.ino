@@ -104,6 +104,9 @@ void setup() {
 
 }
 
+/* By calling updateReading(), the bot receives the current
+configuration information of all bots from the server */
+
 /*   meaning of return values for updateReadings()
     -1 : client not connected
     -2 : client timeout
@@ -240,7 +243,8 @@ void rotate_clockwise() {
   analogWrite(LEFTPWM, ROTATE_PWM );
 }
 
-
+/* This function assigns each bot with a final position
+depending on the desired configuration of the bots. */
 void assignPoints() {
   double distance  = 0 ;
   Serial.println("inside assign pionts function");
